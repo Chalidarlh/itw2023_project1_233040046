@@ -4,8 +4,17 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>D'Crochet</title>
+
+    <!-- Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Neuton&family=Noto+Serif+Display&family=Playfair+Display&display=swap" rel="stylesheet" />
+
     <!-- Feather Icons -->
     <script src="https://unpkg.com/feather-icons"></script>
+
+    <!-- AOS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
 
     <!-- CSS -->
     <link rel="stylesheet" href="css/style.css" />
@@ -23,24 +32,210 @@
       </div>
 
       <div class="navbar-extra">
-        <a href="#" id="search"><i data-feather="search"></i></a>
-        <a href="#" id="shopping-cart"><i data-feather="shopping-cart"></i></a>
+        <a href="#" id="search-button"><i data-feather="search"></i></a>
+        <a href="#" id="shopping-cart-button"><i data-feather="shopping-cart"></i></a>
         <a href="#" id="hamburger-menu"><i data-feather="menu"></i></a>
+      </div>
+
+      <!-- Search Form -->
+      <div class="search-form">
+        <input type="search" id="search-box" placeholder="search here" />
+        <label for="search-box"><i data-feather="search"></i></label>
+      </div>
+
+      <!-- Shopping Cart -->
+      <div class="shopping-cart">
+        <div class="cart-item">
+          <img src="img/bebek.jpg" alt="Duck" />
+          <div class="item-detail">
+            <h3>Duck Keyring</h3>
+            <div class="item-price">IDR 40K</div>
+          </div>
+          <i data-feather="trash-2" class="remove-item"></i>
+        </div>
+        <div class="cart-item">
+          <img src="img/onepiece.jpg" alt="onepiece" />
+          <div class="item-detail">
+            <h3>One Piece Keyring</h3>
+            <div class="item-price">IDR 95K</div>
+          </div>
+          <i data-feather="trash-2" class="remove-item"></i>
+        </div>
+        <div class="cart-item">
+          <img src="img/kelincicoklat.jpg" alt="" />
+          <div class="item-detail">
+            <h3>Rabbit Keyring</h3>
+            <div class="item-price">IDR 65K</div>
+          </div>
+          <i data-feather="trash-2" class="remove-item"></i>
+        </div>
       </div>
     </nav>
 
     <!-- Hero Section -->
     <section class="hero" id="home">
-      <main class="content">
+      <main class="content" data-aos="fade-up" data-aos-duration="1500">
         <h1>D'Crochet</h1>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis, eius! Qui magni dicta velit recusandae ex aliquid, distinctio totam tempor</p>
-        <a href="#" class="cta">Buy Now</a>
+        <p>Handmade Crochet Stuff || est. 2023</p>
+        <a href="https://wa.me/6281324947292" class="cta">Buy Now</a>
       </main>
     </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+      <h2 data-aos="fade-down" data-aos-duration="1500">About Us</h2>
+
+      <div class="row">
+        <div class="about-img">
+          <img src="img/aboutus.png" alt="About Us" data-aos="fade-right" data-aos-duration="1500" width="700" />
+        </div>
+        <div class="content">
+          <p data-aos="fade-left" data-aos-duration="1500">
+            Established in 2023, D'Crochet is a handmade crochet product. Our products made with love with the best quality and produce cute products, so it can make your day happy. And for more info you can scroll below on this website.
+            Happy shopping!
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Catalogue Section -->
+
+    <section id="catalogue" class="catalogue">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+        <path
+          fill="#f1e2c9"
+          fill-opacity="1"
+          d="M0,128L30,128C60,128,120,128,180,160C240,192,300,256,360,240C420,224,480,128,540,128C600,128,660,224,720,240C780,256,840,192,900,144C960,96,1020,64,1080,90.7C1140,117,1200,203,1260,224C1320,245,1380,203,1410,181.3L1440,160L1440,0L1410,0C1380,0,1320,0,1260,0C1200,0,1140,0,1080,0C1020,0,960,0,900,0C840,0,780,0,720,0C660,0,600,0,540,0C480,0,420,0,360,0C300,0,240,0,180,0C120,0,60,0,30,0L0,0Z"
+        ></path>
+      </svg>
+      <h2 data-aos="fade-down" data-aos-duration="1500">Catalogue</h2>
+
+      <div class="row">
+        <div class="catalogue-card">
+          <img src="img/bebek.jpg" alt="Duck" class="catalogue-card-image" data-aos="flip-left" data-aos-duration="1500" width="250" />
+          <h3 class="catalogue-card-title">Duck Keyring</h3>
+          <p class="catalogue-card-price">IDR 40K</p>
+          <div class="icon">
+            <a href="#"><i data-feather="shopping-cart"></i></a>
+          </div>
+        </div>
+        <div class="catalogue-card">
+          <img src="img/onepiece.jpg" alt="OnePiece" class="catalogue-card-image" data-aos="flip-left" data-aos-duration="1500" width="250" />
+          <h3 class="catalogue-card-title">One Piece Keyring</h3>
+          <p class="catalogue-card-price">IDR 95K</p>
+          <div class="icon">
+            <a href="#"><i data-feather="shopping-cart"></i></a>
+          </div>
+        </div>
+        <div class="catalogue-card">
+          <img src="img/jerapah.jpg" alt="Giraffe" class="catalogue-card-image" data-aos="flip-left" data-aos-duration="1500" width="250" />
+          <h3 class="catalogue-card-title">Giraffe Keyring</h3>
+          <p class="catalogue-card-price">IDR 55K</p>
+          <div class="icon">
+            <a href="#"><i data-feather="shopping-cart"></i></a>
+          </div>
+        </div>
+        <div class="catalogue-card">
+          <img src="img/alphabet.jpg" alt="Alphabet" class="catalogue-card-image" data-aos="flip-left" data-aos-duration="1500" width="250" />
+          <h3 class="catalogue-card-title">Alphabet Keyring</h3>
+          <p class="catalogue-card-price">IDR 35K</p>
+          <div class="icon">
+            <a href="#"><i data-feather="shopping-cart"></i></a>
+          </div>
+        </div>
+        <div class="catalogue-card">
+          <img src="img/kelincicoklat.jpg" alt="Rabbit" class="catalogue-card-image" data-aos="flip-right" data-aos-duration="1500" width="250" />
+          <h3 class="catalogue-card-title">Rabbit Keyring</h3>
+          <p class="catalogue-card-price">IDR 65K</p>
+          <div class="icon">
+            <a href="#"><i data-feather="shopping-cart"></i></a>
+          </div>
+        </div>
+        <div class="catalogue-card">
+          <img src="img/kucing.jpg" alt="Cat" class="catalogue-card-image" data-aos="flip-right" data-aos-duration="1500" width="250" />
+          <h3 class="catalogue-card-title">Cat Keyring</h3>
+          <p class="catalogue-card-price">IDR 45K</p>
+          <div class="icon">
+            <a href="#"><i data-feather="shopping-cart"></i></a>
+          </div>
+        </div>
+        <div class="catalogue-card">
+          <img src="img/lotso.jpg" alt="Lotso" class="catalogue-card-image" data-aos="flip-right" data-aos-duration="1500" width="250" />
+          <h3 class="catalogue-card-title">Lotso Keyring</h3>
+          <p class="catalogue-card-price">IDR 45K</p>
+          <div class="icon">
+            <a href="#"><i data-feather="shopping-cart"></i></a>
+          </div>
+        </div>
+        <div class="catalogue-card">
+          <img src="img/hippoo.jpg" alt="Hippo" class="catalogue-card-image" data-aos="flip-right" data-aos-duration="1500" width="250" />
+          <h3 class="catalogue-card-title">Hippo Keyring</h3>
+          <p class="catalogue-card-price">IDR 75K</p>
+          <div class="icon">
+            <a href="#"><i data-feather="shopping-cart"></i></a>
+          </div>
+        </div>
+      </div>
+
+      <h4 data-aos="fade-up" data-aos-duration="1500">You can also custom anything you want! <a href="#contact">Click here</a> for custom.</h4>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+        <path
+          fill="#ddc49a"
+          fill-opacity="1"
+          d="M0,160L30,170.7C60,181,120,203,180,186.7C240,171,300,117,360,122.7C420,128,480,192,540,186.7C600,181,660,107,720,106.7C780,107,840,181,900,186.7C960,192,1020,128,1080,133.3C1140,139,1200,213,1260,245.3C1320,277,1380,267,1410,261.3L1440,256L1440,0L1410,0C1380,0,1320,0,1260,0C1200,0,1140,0,1080,0C1020,0,960,0,900,0C840,0,780,0,720,0C660,0,600,0,540,0C480,0,420,0,360,0C300,0,240,0,180,0C120,0,60,0,30,0L0,0Z"
+        ></path>
+      </svg>
+      <h2 data-aos="fade-down" data-aos-duration="1500">Contact Us</h2>
+
+      <form action="" name="d'crochet-contact-form">
+        <div class="input-grup">
+          <i data-feather="user"></i>
+          <input type="text" placeholder="Name" name="nama" />
+        </div>
+        <div class="input-grup">
+          <i data-feather="phone"></i>
+          <input type="text" placeholder="Your Phone" name="notelp" />
+        </div>
+        <div class="input-grup">
+          <i data-feather="message-circle"></i>
+          <input type="text" placeholder="Message" name="pesan" />
+        </div>
+        <button type="submit" class="btn btn-kirim">Send</button>
+        <button type="button" class="btn btn-loading d-none">Loading..</button>
+      </form>
+      <div class="alert d-none my-alert" role="alert"><strong>Thank You!</strong> Your message has been sent.</div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+      <div class="socials">
+        <a href="https://www.instagram.com/dwiindahpp/"><i data-feather="instagram"></i></a>
+        <a href="https://wa.me/6281324947292"><i data-feather="phone"></i></a>
+      </div>
+      <div class="links">
+        <a href="#home">Home</a>
+        <a href="#about">About Us</a>
+        <a href="#catalogue">Catalogue</a>
+        <a href="#contact">Contact</a>
+      </div>
+      <div class="credit">
+        <p>Created by <a href="https://www.instagram.com/chalida.rlh/">Chalidarlh</a>. | &copy; 2023</p>
+      </div>
+    </footer>
 
     <!-- Feather Icons -->
     <script>
       feather.replace();
+    </script>
+
+    <!-- AOS -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
     </script>
 
     <!-- Javascipt -->
