@@ -20,7 +20,7 @@ html {
 }
 
 body {
-  background-color: var(--warna2);
+  background-color: var(--warna3);
   color: black;
   font-family: "Playfair Display", serif;
 }
@@ -299,10 +299,29 @@ body {
   border: 1px solid white;
   color: var(--warna3);
 }
+/* Review Section */
+.review {
+  background-color: var(--warna2);
+}
+.review h2 {
+  text-align: center;
+  font-size: 3rem;
+
+  font-family: "Neuton", serif;
+  color: var(--warna5);
+}
+.review .review-grup {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.review .review-grup img {
+  margin: 2rem 3rem;
+}
 
 /* Contact Section */
 .contact {
-  background-color: var(--warna2);
+  background-color: var(--warna3);
 }
 .contact h2 {
   text-align: center;
@@ -320,7 +339,7 @@ body {
   display: flex;
   align-items: center;
   margin: 2rem 10rem;
-  background-color: var(--warna3);
+  background-color: var(--warna2);
   border: 1px solid black;
   padding-left: 3rem;
 }
@@ -470,6 +489,9 @@ footer .credit a {
   .catalogue .row .catalogue-card .icon a {
     width: 4rem;
     height: 4rem;
+  }
+  .review .review-grup img {
+    width: 25rem;
   }
   .contact form .input-grup {
     margin: 2rem 5rem;
